@@ -1,0 +1,132 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:black
+}
+
+button {
+padding: 15px 30px;
+background-color: grey;
+border-radius: 15px;
+border: none;
+width: 30%;
+font-size: 16px;
+}
+
+button:hover {
+background-color: #b6cadd;
+cursor: pointer;
+}
+
+a:hover {
+color: darkslategrey;
+}
+
+a:focus {
+    color: grey;
+}
+
+h1 {
+    text-align: center;
+    padding: 150px 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    background-color: rgba(141, 141, 141, 0.7);
+}
+.header, .footer {
+    background-color: #b6cadd;
+    padding: 10px;
+  
+}
+
+.header__menu, .footer__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.main__container {
+    display: flex;
+    justify-content: center;
+    height: 550px;
+    background-image: url(/img.jpg);
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.header__items, .footer__items {
+    padding: 0 30px;
+}
+
+.main__hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 100px;
+    flex-wrap: wrap;
+}
+
+.news__img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+}
+
+.news__items {
+    text-align: left;
+}
+
+.news__items:nth-child(2n) {
+    background-color: rgba(112, 112, 112, 0.753);
+}
+
+
+article {
+    margin-top: 50px;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 10px;
+    box-shadow: 0 2px 2px grey;
+    padding: 20px;
+    width: 25%;
+    height: 550px;
+    margin-right: 20px;
+}
+
+article:hover {
+box-shadow: 0 10px 10px rgb(70, 70, 70);
+cursor: pointer;
+}
+
+article:nth-last-child() {
+margin-right: 20px;
+}
+
+.new::before {
+content: '#new';
+color: green;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+.footer__descr {
+    text-align: center;
+    margin-top: 10px;
+}
